@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adorzia - Fashion Innovation Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'adorzia': {
+                            primary: '#FF385C',
+                            secondary: '#1E293B',
+                            accent: '#6366F1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-adorzia-primary">Adorzia</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#platforms" class="text-gray-600 hover:text-adorzia-primary transition">Platforms</a>
+                    <a href="#features" class="text-gray-600 hover:text-adorzia-primary transition">Features</a>
+                    <a href="#about" class="text-gray-600 hover:text-adorzia-primary transition">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-adorzia-primary transition">Contact</a>
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <button class="px-6 py-2 text-adorzia-primary border border-adorzia-primary rounded-full hover:bg-adorzia-primary hover:text-white transition">Login</button>
+                    <button class="px-6 py-2 bg-adorzia-primary text-white rounded-full hover:bg-opacity-90 transition">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-gray-900 to-adorzia-secondary text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Fashion Innovation Ecosystem</h1>
+                <p class="text-xl text-gray-300 mb-10">Connecting designers, resellers, manufacturers, and learners through a seamless digital infrastructure.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="px-8 py-3 bg-adorzia-primary text-white rounded-full hover:bg-opacity-90 transition">Get Started</button>
+                    <button class="px-8 py-3 border-2 border-white text-white rounded-full hover:bg-white hover:text-gray-900 transition">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Overview -->
+    <section id="platforms" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Our Platforms</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Website Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-adorzia-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-2xl text-adorzia-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Adorzia Website</h3>
+                    <p class="text-gray-600 mb-6">The official landing page serving as the entry point for all stakeholders.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Brand Overview</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Designer Sign-up/Login</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Marketplace Access</li>
+                    </ul>
+                </div>
+
+                <!-- Designer Portal Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-adorzia-accent bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-2xl text-adorzia-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Designer Portal</h3>
+                    <p class="text-gray-600 mb-6">Core platform for fashion designers to practice, compete, and monetize designs.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Designer Profile</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>StyleBox Challenges</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Team Features</li>
+                    </ul>
+                </div>
+
+                <!-- Marketplace Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-adorzia-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-store text-2xl text-adorzia-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">B2B Marketplace</h3>
+                    <p class="text-gray-600 mb-6">Business-to-business marketplace for resellers to buy approved designs in bulk.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Exclusive B2B Access</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Curated Collections</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Bulk Discounts</li>
+                    </ul>
+                </div>
+
+                <!-- Manufacturer Portal Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-adorzia-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-industry text-2xl text-adorzia-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Manufacturer Portal</h3>
+                    <p class="text-gray-600 mb-6">Dedicated platform for manufacturing partners to produce approved designs.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Order Management</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Production Tracking</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Quality Control</li>
+                    </ul>
+                </div>
+
+                <!-- Styleathon Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-adorzia-accent bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-2xl text-adorzia-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Styleathon App</h3>
+                    <p class="text-gray-600 mb-6">Real-time challenge app for designers to compete in StyleBox puzzles.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Timed Challenges</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Live Leaderboard</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Exclusive Rewards</li>
+                    </ul>
+                </div>
+
+                <!-- Academy Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-adorzia-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-2xl text-adorzia-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Adorzia Academy</h3>
+                    <p class="text-gray-600 mb-6">Learning hub offering certifications and training for fashion designers.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Online Courses</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Certification Exams</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Interactive Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Why Choose Adorzia?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto bg-adorzia-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-3xl text-adorzia-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Complete Ecosystem</h3>
+                    <p class="text-gray-600">Connect with designers, resellers, manufacturers, and learners in one place.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto bg-adorzia-accent bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-3xl text-adorzia-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Growth Opportunities</h3>
+                    <p class="text-gray-600">Practice, compete, and monetize your designs through multiple channels.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto bg-adorzia-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-adorzia-secondary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Secure & Reliable</h3>
+                    <p class="text-gray-600">Enterprise-grade security and compliance for all stakeholders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-adorzia-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Ready to Join the Fashion Innovation Revolution?</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">Start your journey with Adorzia today and be part of the future of fashion design.</p>
+            <button class="px-8 py-3 bg-white text-adorzia-primary rounded-full hover:bg-gray-100 transition">Get Started Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Adorzia</h3>
+                    <p class="mb-4">Fashion Innovation Ecosystem</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Platforms</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Designer Portal</a></li>
+                        <li><a href="#" class="hover:text-white">Marketplace</a></li>
+                        <li><a href="#" class="hover:text-white">Manufacturer Portal</a></li>
+                        <li><a href="#" class="hover:text-white">Styleathon</a></li>
+                        <li><a href="#" class="hover:text-white">Academy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="hover:text-white">Support</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-envelope mr-2"></i> contact@adorzia.com</li>
+                        <li><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Fashion District, NY</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2024 Adorzia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
